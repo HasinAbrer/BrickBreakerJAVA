@@ -1,5 +1,5 @@
 package BrickBreakerJAVA;
-
+                   
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -19,7 +19,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener
     private int delay = 8;
 
     private int playerX = 310;
-    private int ballposX = 120;
+    private int ballposX = 120;   
     private int ballposY = 350;
     private int ballXdir = -1;
     private int ballYdir = -2;
@@ -86,7 +86,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener
             ballYdir = 0;
             g.setColor(Color.RED);
             g.setFont(new Font("TTT", Font.BOLD, 30));
-            g.drawString("Game Over, Scores : ", 190, 300);
+            g.drawString("Game Over, Scores : "+score, 190, 300);
 
             g.setFont(new Font("TTT", Font.BOLD, 20));
             g.drawString("Press Enter to Restart", 230, 350);
